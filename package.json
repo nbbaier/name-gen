@@ -1,8 +1,23 @@
 {
+  "name": "name-gen",
+  "version": "1.0.0",
+  "description": "a little cli that creates astro like project names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbbaier/name-gen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbbaier/name-gen/issues"
+  },
+  "homepage": "https://github.com/nbbaier/name-gen#readme",
   "devDependencies": {
     "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "opencommit": "^2.4.2"
   }
 }
