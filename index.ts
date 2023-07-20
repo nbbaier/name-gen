@@ -5,10 +5,9 @@ const random = (...arr: any[]) => {
   return arr[Math.floor(arr.length * Math.random())];
 };
 
-function generateProjectName() {
+export function generateProjectName() {
   const adjective = random(adjectives);
   const validNouns = nouns.filter((n) => n[0] === adjective[0]);
-  console.log(validNouns.length);
   if (validNouns.length < 2) {
     return `${random(adjectives)}-${random(nouns)}`;
   }
