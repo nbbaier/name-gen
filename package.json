@@ -19,5 +19,8 @@
   "homepage": "https://github.com/nbbaier/name-gen#readme",
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.2"
   }
 }
