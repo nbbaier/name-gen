@@ -1,15 +1,24 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "lib": [
-      "ES2022"
+      "ESNext"
     ],
-    "target": "es2022",
-    "module": "commonjs",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "composite": true,
     "strict": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "allowJs": true,
+    "types": [
+      "bun-types" // add Bun global
+    ]
   }
 }
