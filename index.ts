@@ -2,13 +2,13 @@ import { nouns, adjectives } from "./words.js";
 
 // const flag = Bun.argv.slice(1) || "no opt";
 
-const random = (...arr: any[]) => {
+const random = (...arr: string[]): string => {
   arr = arr.flat(1);
   return arr[Math.floor(arr.length * Math.random())];
 };
 
-export function generateProjectName() {
-  const adjective = random(adjectives);
+export function generateProjectName(): string {
+  const adjective: string = random(adjectives);
   const validNouns = nouns.filter((n) => n[0] === adjective[0]);
   if (validNouns.length < 2) {
     return `${random(adjectives)}-${random(nouns)}`;
